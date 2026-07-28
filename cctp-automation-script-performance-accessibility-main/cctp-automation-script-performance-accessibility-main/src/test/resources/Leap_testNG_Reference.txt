@@ -1,0 +1,6 @@
+mvn clean test -Dtest=SingleTaskScenario#TestForCreatingTodoList,SingleTaskScenario#TestForCreatingDeletingTodoList,SingleTaskScenario#TestForUpdatingTodoList,MultiTaskScenario#TestForCreatingMultiTodoList,MultiTaskScenario#TestForUpdatingMultiTodoList test
+
+
+mvn clean test -Dtest=SingleTaskScenario#TestForCreatingTodoList test
+
+mvn clean test -Dtest=TodoRobotsScenario#TestForRobot42 test

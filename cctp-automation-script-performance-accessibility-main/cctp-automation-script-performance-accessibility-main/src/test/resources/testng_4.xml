@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SampleTestNG" parallel="methods" thread-count="1">
+    <test name="Test for Todo Scenario">
+        <classes>
+            <class name="testscripts.TodoRobotsScenario">
+                <methods>
+                  
+                    <include name="TestForRobot5"></include>
+                    <include name="TestForRobot6"></include>
+                    <include name="TestForRobot7"></include>
+                    <include name="TestForRobot8"></include>
+                </methods>
+            </class>
+
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
