@@ -80,8 +80,8 @@ public class WebDriverFactory {
 
             case EDGE:
                 // Takes the system proxy settings automatically
-                //WebDriverManager.edgedriver().setup();
-                System.setProperty("webdriver.edge.driver", "C:\\Driver\\msedgedriver.exe");
+                WebDriverManager.edgedriver().setup();
+                // System.setProperty("webdriver.edge.driver", "C:\\Driver\\msedgedriver.exe");
                 driver = new EdgeDriver();
                 break;
 
