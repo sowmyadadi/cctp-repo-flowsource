@@ -40,7 +40,7 @@ public class HomePage extends MasterPage {
     @FindBy(linkText = "Home")
     public WebElement btnHome;
 
-    @FindBy(linkText = "Log")
+    @FindBy(linkText = "Logout")
     public WebElement btnLogout;
 
     public HomePage(ScriptHelper scriptHelper) {
