@@ -60,7 +60,7 @@ public class WebDriverFactory {
                 WebDriverManager.chromedriver().setup();
                 //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver-win64\\chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
-                //chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--no-sandbox");
                 //chromeOptions.addArguments("--user-data-dir=/app"); 
                 driver = new ChromeDriver(chromeOptions);
