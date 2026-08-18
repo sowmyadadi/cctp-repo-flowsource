@@ -17,8 +17,8 @@ public class LoginPage extends MasterPage {
 
     private static final Logger LOGGER = LogManager.getLogger(LoginPage.class);
 
-    @FindBy(linkText = "Login")
-    public WebElement linkTxtLogin;
+    // @FindBy(linkText = "Login")
+    // public WebElement linkTxtLogin;
 
     @FindBy(id = "login")
     public WebElement txtUsername;
