@@ -64,6 +64,7 @@ public class WebDriverFactory {
                 chromeOptions.addArguments("--no-sandbox");
                 //chromeOptions.addArguments("--user-data-dir=/app"); 
                 driver = new ChromeDriver(chromeOptions);
+                chromeOptions.addArguments("--window-size=1920,1080");
                 break;
 
             case FIREFOX:
