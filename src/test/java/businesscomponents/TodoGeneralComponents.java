@@ -80,7 +80,7 @@ public class TodoGeneralComponents extends ReusableLibrary {
     public void logOut() {
 
         homePage.logout();
-        //report.updateTestLog("Logout", "Logout success message is present", Status.PASS);
+        report.updateTestLog("Logout", "Logout success message is present", Status.PASS);
     }
 
 
