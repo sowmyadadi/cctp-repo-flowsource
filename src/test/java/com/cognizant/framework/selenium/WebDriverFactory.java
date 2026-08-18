@@ -62,7 +62,7 @@ public class WebDriverFactory {
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--no-sandbox");
-                //chromeOptions.addArguments("--user-data-dir=/app"); 
+                chromeOptions.addArguments("--user-data-dir=/app2"); 
                 driver = new ChromeDriver(chromeOptions);
                 chromeOptions.addArguments("--window-size=1920,1080");
                 break;
