@@ -8,7 +8,7 @@ import com.cognizant.framework.selenium.SeleniumTestParameters;
 
 public class SingleTaskScenario extends TestConfigurations {
 
-	@Test(dataProvider = "ChromeBrowser", dataProviderClass = TestConfigurations.class)
+	@Test(dataProvider = "ChromeHeadlessBrowser", dataProviderClass = TestConfigurations.class)
 	public void TestForCreatingTodoList(SeleniumTestParameters testParameters) {
 
 		testParameters.setCurrentTestDescription("Test for creating a Todo List");
