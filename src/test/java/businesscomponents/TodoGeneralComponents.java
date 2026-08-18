@@ -36,6 +36,7 @@ public class TodoGeneralComponents extends ReusableLibrary {
 
         loginPage.launchUrl();
         loginPage.login();
+        driver.manage().window().setSize(new Dimension(1920, 1080));
         report.updateTestLog("Login", "Login Successful", Status.PASS);
 
     }
