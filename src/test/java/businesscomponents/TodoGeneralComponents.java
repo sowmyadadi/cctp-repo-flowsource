@@ -1,6 +1,6 @@
 package businesscomponents;
 
-
+import org.openqa.selenium.Dimension;
 import com.cognizant.craft.DriverScript;
 import com.cognizant.craft.ReusableLibrary;
 import com.cognizant.craft.ScriptHelper;
