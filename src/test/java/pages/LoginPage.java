@@ -17,7 +17,8 @@ public class LoginPage extends MasterPage {
 
     private static final Logger LOGGER = LogManager.getLogger(LoginPage.class);
 
-    @FindBy(linkText = "Login")
+    // @FindBy(linkText = "Login")
+    @FindBy(xpath = "//*[@value='Log In']")
     public WebElement linkTxtLogin;
 
     @FindBy(id = "login")
@@ -40,7 +41,9 @@ public class LoginPage extends MasterPage {
         driver.get(properties.getProperty("ApplicationUrl"));
 
         System.out.println("Application URL -----------");
-        boolean isApplicationLaunched = checkElement(By.linkText("Login"));
+        // boolean isApplicationLaunched = checkElement(By.linkText("Login"));
+        Thread.sleep(1000);
+        boolean isApplicationLaunched = checkElement(By.xpath("//*[@value='Log In']"));
         System.out.println("Application Launched Successfully");
         // Assert.assertTrue(isApplicationLaunched, "Application Launched Successfully");
         report.updateTestLog("Launch", "Application Launched", Status.DONE, driver);
