@@ -27,7 +27,7 @@ public class LoginPage extends MasterPage {
     @FindBy(id = "password")
     public WebElement txtPassword;
 
-    @FindBy(xpath = "//*[@value='Log In']")
+    @FindBy(xpath = "//*[@id="formContent"]/form/input[3]")
     public WebElement btnLogin;
 
     public LoginPage(ScriptHelper scriptHelper) {
@@ -47,7 +47,7 @@ public class LoginPage extends MasterPage {
         System.out.println("====================================");
 
         
-        boolean isApplicationLaunched = checkElement(By.xpath("//*[@value='Log In']"));
+        boolean isApplicationLaunched = checkElement(By.xpath("//*[@id="formContent"]/form/input[3]"));
         System.out.println("Application Launched Successfully");
         System.out.println("Application Launched Successfully");
         // Assert.assertTrue(isApplicationLaunched, "Application Launched Successfully");
