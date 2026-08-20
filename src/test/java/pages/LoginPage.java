@@ -40,9 +40,15 @@ public class LoginPage extends MasterPage {
         Properties properties = Settings.getInstance();
         driver.get(properties.getProperty("ApplicationUrl"));
 
-        System.out.println("Application URL -----------Opening URL-");
-       
+        System.out.println("Application URL -----------Opening URL-" + properties.getProperty("ApplicationUrl"));
+        String currentUrl = driver.getCurrentUrl();         
+        System.out.println("====================================");        
+        System.out.println("Current URL   : " + currentUrl);       
+        System.out.println("====================================");
+
+        
         boolean isApplicationLaunched = checkElement(By.xpath("//*[@value='Log In']"));
+        System.out.println("Application Launched Successfully");
         System.out.println("Application Launched Successfully");
         // Assert.assertTrue(isApplicationLaunched, "Application Launched Successfully");
         report.updateTestLog("Launch", "Application Launched", Status.DONE, driver);
