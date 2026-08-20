@@ -18,7 +18,7 @@ public class LoginPage extends MasterPage {
     private static final Logger LOGGER = LogManager.getLogger(LoginPage.class);
 
     // @FindBy(linkText = "Login")
-    @FindBy(xpath = "//*[@value='Log In']")
+    @FindBy(xpath = "//*[@id="formContent"]/form/input[3]")
     public WebElement linkTxtLogin;
 
     @FindBy(id = "login")
